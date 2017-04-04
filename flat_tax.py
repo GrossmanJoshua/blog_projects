@@ -22,6 +22,7 @@ def compute_rate(current_income_tax_income, total_income, npeople, offset):
       return R,offset
 
 # http://www.usgovernmentrevenue.com/current_revenue
+# https://www.statista.com/statistics/216756/us-personal-income/
 R,C = compute_rate(2.6e12, 15e12, 200e6, i, 25000)
 
 incxs = np.logspace(3,np.log10(5000000),1000)
